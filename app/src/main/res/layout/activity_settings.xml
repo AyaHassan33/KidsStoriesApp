@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#98F19B"
+    android:layout_height="match_parent"
+
+    tools:context=".Settings">
+    <include layout="@layout/toolbar" android:id="@+id/toolbar1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_size"
+        android:textStyle="bold"
+
+        android:fontFamily="cursive"
+        android:textAllCaps="false"
+        android:textSize="35dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/RG"
+        >
+        <RadioButton
+            android:id="@+id/RB1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/small"
+
+            android:fontFamily="cursive"
+            android:textSize="35sp"
+            android:textAllCaps="false"/>
+
+        <RadioButton
+            android:id="@+id/RB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="@string/medium"
+            android:textAllCaps="false"
+            android:textSize="35dp" />
+        <RadioButton
+            android:id="@+id/RB3"
+            android:layout_width="wrap_content"
+            android:fontFamily="cursive"
+            android:layout_height="wrap_content"
+            android:text="@string/large"
+            android:textSize="35sp"
+            android:textAllCaps="false"/>
+    </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
